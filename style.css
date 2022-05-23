@@ -1,0 +1,436 @@
+@charset "UTF-8";
+html {
+  font-size: 1rem;
+  max-width: 100vw;
+}
+body {
+  width: 100%;
+  margin: 0;
+  color: #4d4c4c;
+}
+img {
+  max-height: 100%;
+}
+a {
+  color: #fff;
+  text-decoration: none;}
+li {
+  list-style: none;
+}
+/* ---------------------------------------------
+common
+---------------------------------------------- */
+.title-wrapper {
+  font-size: 3.12vw;
+  padding-top: 5.2vw;
+  padding-bottom: 5.7vw;
+  text-align: center;
+}
+.title-wrapper h2 {
+  margin-bottom: 1.9vw;
+}
+.title-wrapper img {
+  width: 22vw;
+  height: 4.2vw;
+}
+/*------------------------------------------------
+header
+-------------------------------------------------*/
+#header {
+  background-image: linear-gradient(#75bdd3, #55c4bb);
+}
+.navigation-container {
+  display: flex;
+  padding: 0.6vw 0 0 0.8vw;
+  margin: 0;
+}
+.navigation-list {
+  color: #fff;
+  margin-right: 1.3vw;
+  position: relative;
+}
+.navigation-list a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%; /* 位置調整 */
+  transform: translate(-50%); /* 位置調整 */
+  bottom: -0.5vw; /* 下線の上下位置調整 */
+  width: 70%; /* 下線の幅 */
+  height: 3px; /* 下線の太さ */
+  background-color: #6aedc8; /* 下線の色 */
+}
+.navigation-list a {
+  font-size: 0.88vw;
+  position: relative;
+}
+/*------------------------------------------------
+top
+-------------------------------------------------*/
+.top-container {
+  display: flex;
+  padding: 16.6vw 17.9vw;
+}
+.bg-img img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 22.86vw;
+  margin-right: 4.68vw solid #fff;
+  padding: 1.3vw;
+}
+.name-list {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3.5px;
+  padding-top: 6.25vw;
+  padding-left: 3.64vw;
+}
+.name-tittle {
+  margin-bottom: 1.3vw;
+  font-size: 3.125vw;
+  font-weight: 100;
+  position: relative;
+}
+.name-tittle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 53%; /* 位置調整 */
+  transform: translate(-48%); /* 位置調整 */
+  bottom: -0.2vw; /* 下線の上下位置調整 */
+  width: 75%; /* 下線の幅 */
+  height: 3px; /* 下線の太さ */
+  background-color: #6aedc8; /* 下線の色 */
+}
+.name-list p {
+  font-size: 2.23vw;
+}
+/*------------------------------------------------
+about
+-------------------------------------------------*/
+.about-container {
+  text-align: center;
+}
+.about-list .program-language {
+  font-size: 3vw;
+  margin: 0 15vw 3.8vw;
+}
+.about-list p {
+  font-size: 1.5vw;
+}
+/* pc表示 */
+.pc-txt {
+  display: block;
+}
+/* sp非表示 */
+.sp-txt {
+  display: none;
+}
+.about-icon-list {
+  margin-top: 2.6vw;
+}
+.about-icon-list p {
+  margin-bottom: 2vw;
+}
+.about-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11vw;
+  padding: 0;
+}
+.about-icon li {
+  width: 3.5vw;
+  height: 3.5vw;
+  margin: 0 1.8vw;
+}
+/*------------------------------------------------
+projects
+-------------------------------------------------*/
+/* タイトル部分 */
+.projects .title-wrapper {
+  padding-top: 0px;
+  margin-top: 0.5vw;
+}
+.projects .title-wrapper h2 {
+  margin-bottom: 1.9vw;
+  padding-top: 12vw;
+}
+.projects {
+  background-color: #53bd9d;
+  color: #fff;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); /*台形部分*/
+}
+/* コンテンツ部分 */
+.projects-content {
+  display: flex;
+  padding-bottom: 20.3vw;
+}
+.content {
+  width: 50%;
+  padding-left: 11vw;
+}
+.content img {
+  width: 25vw;
+  height: 24vw;
+  margin-bottom: 1.8vw;
+}
+.content h3 {
+  font-size: 1.8vw;
+  padding-bottom: 1.8vw;
+}
+.content h4 {
+  font-size: 1.45vw;
+  padding: 1.3vw 0;
+}
+.content p {
+  font-size: 1.14vw;
+}
+.project-link {
+  display: flex;
+}
+.project-link li {
+  border: 1px solid #fff;
+  font-size: 0.8vw;
+  padding: 0.5vw 0.4vw;
+  margin-top: 1.89vw;
+}
+.project-link li:last-child {
+  margin-left: 1.8vw;
+}
+.projects-site .icon-github {
+  margin-left: 20px;
+}
+.content .email {
+  margin-bottom: 0.78vw;
+}
+/*------------------------------------------------
+contact
+-------------------------------------------------*/
+.contact {
+  margin-bottom: 17vw;
+}
+.contact-icon-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+}
+.contact-icon {
+  margin: 0 6.25vw;
+  background-color: #dedada;
+  padding-top: 1.9vw;
+  border-top: 5px solid #53bd9d;
+  width: 27vw;
+  text-align: center;
+}
+.contact-icon img {
+  display: block;
+  margin: auto;
+  width: 3.75vw;
+  height: 3.75vw;
+}
+/* pc表示 */
+.pc-contact {
+  display: inline-block;
+}
+/* sp非表示 */
+.sp-contact {
+  display: none;
+}
+/* pc表示 */
+.contact-icon .pc-icon {
+  display: block;
+}/* sp非表示 */
+.contact-icon .sp-icon {
+  display: none;
+}
+.contact-text {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 1.7vw;
+  margin-bottom: 0.9vw;
+  display: inline-block;
+  font-size: 1.82vw;
+}
+.contact-txt {
+  font-size: 1.8vw;
+  margin-bottom: 3.22vw;
+}
+/*------------------------------------------------
+footer
+-------------------------------------------------*/
+#footer p {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  background-color: #dedada;
+}
+
+
+/*------------------------------------------------
+sp仕様
+-------------------------------------------------*/
+@media screen and (max-width: 428px) {
+  /* header ------------------*/
+  .navigation-container {
+    padding: 2.8vw 0 0 3.97vw;
+  }
+  .navigation-list a {
+    font-size: 3.97vw;
+    margin-right: 6.3vw;
+  }
+  /* top ------------------*/
+  .top-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .name-tittle {
+    font-size: 7vw;
+    margin-bottom: 5.84vw;
+    display: inline-block;
+    position: relative;
+  }
+  .name-tittle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%; /* 位置調整 */
+    transform: translate(-46%); /* 位置調整 */
+    bottom: -1.2vw; /* 下線の上下位置調整 */
+    width: 102%; /* 下線の幅 */
+    height: 3px; /* 下線の太さ */
+    background-color: #6aedc8; /* 下線の色 */
+  }
+  .name-list p {
+    font-size: 7vw;
+  }
+  .name-list .sub-title {
+    font-size: 4vw;
+    margin-top: 4.67vw;
+    margin-bottom: 21.02vw;
+  }
+  .bg-img {
+    padding: 16.6vw 17.9vw 0;
+  }
+  .bg-img img {
+    width: 67.28vw;
+    padding: 3.5vw;
+  }
+  /* about ------------------*/
+  #about .title-wrapper {
+    padding-top: 17.52vw;
+    padding-bottom: 7vw;
+  }
+  .about-list .program-language {
+    margin: 0 6.54vw 3.73vw;
+    font-size: 2.57vw;
+  }
+  .pc-txt {
+    display: none;
+    font-size: 1.5vw;
+  }
+  .sp-txt {
+    display: block;
+  }
+  .about-icon li {
+    width: 7.47vw;
+    height: 7.47vw;
+    margin: 0 1.8vw;
+  }
+  .about-icon-list p {
+    font-size: 2.57vw;
+  }
+  /* .projects ------------------*/
+  .projects {
+    background-color: #53bd9d;
+    color: #fff;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 92%);
+  }
+  .projects .title-wrapper h2 {
+    margin-bottom: 1.9vw;
+    padding-top: 15vw;
+  }
+  .projects-content {
+    flex-direction: column;
+  }
+  .content {
+    padding-left: 0;
+    padding: 0 0 0 15.42vw;
+    width: 100%;
+  }
+  .content h3 {
+    display: inline-block;
+    font-size: 5.14vw;
+    font-weight: 100;
+    text-align: center;
+    margin: 4.67vw 14.01vw;
+  }
+  .content h4 {
+    font-size: 3.5vw;
+    margin-top: 4.2vw;
+    margin-bottom: 2.33vw;
+  }
+  .content img {
+    width: 68.22vw;
+    height: 65.18vw;
+  }
+  .content p {
+    font-size: 3.2vw;
+  }
+  .content .email, .pass {
+    font-size: 2.8vw;
+  }
+  .project-link {
+    margin: 3.5vw 14.01vw 16.35vw;
+  }
+  .project-link li {
+    padding: 1.86vw;
+    font-size: 2.8vw;
+  }
+  /* contact */
+  .title-wrapper h2 {
+    font-size: 4.67vw;
+  }
+  .contact {
+    margin-bottom: 4.67vw;
+  }
+  /* pc非表示 */
+  .pc-contact {
+    display: none;
+  }
+  /* sp表示 */
+  .sp-contact {
+    display: inline-block;
+  }
+  .contact-icon-list {
+    flex-direction: column;
+  }
+  .contact-icon {
+    background-color: #dedada;
+    margin: 0 19.39vw 17.52vw;
+    width: 60.98vw;
+    height: 40.1vw;
+    padding-top: 7vw;
+    border-top: 5px solid #53bd9d;
+    text-align: center;
+  }
+  .contact-icon img {
+    margin: 0 auto 4.67vw;
+    width: 7.4vw;
+    height: 7.4vw;
+  }
+  .contact-text {
+    width: 13.7vw;
+    margin-bottom: 2.8vw;
+  }
+  .contact-txt {
+    font-size: 3.27vw;
+  }
+   /* pc非表示 */
+  .contact-icon .pc-icon {
+    display: none;
+  }
+  /* sp表示 */
+  .contact-icon .sp-icon {
+    display: block;
+  }
+}
