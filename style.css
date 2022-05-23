@@ -21,13 +21,13 @@ li {
 common
 ---------------------------------------------- */
 .title-wrapper {
-  font-size: 3.12vw;
   padding-top: 5.2vw;
   padding-bottom: 5.7vw;
   text-align: center;
 }
 .title-wrapper h2 {
   margin-bottom: 1.9vw;
+  font-size: 3.12vw;
 }
 .title-wrapper img {
   width: 22vw;
@@ -112,7 +112,7 @@ about
   text-align: center;
 }
 .about-list .program-language {
-  font-size: 3vw;
+  font-size: 1.82vw;
   margin: 0 15vw 3.8vw;
 }
 .about-list p {
